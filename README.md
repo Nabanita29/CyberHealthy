@@ -2,6 +2,38 @@
 
 CyberHealthy is a project aimed at sentiment analysis and personalized support for harmful comments. It utilizes machine learning techniques to classify comments as positive or negative and provides appropriate responses, based on a diverse dataset of positive and negative comments in various different languages.
 
+## Setup Instructions
+
+To run the project, follow the steps below:
+
+### 1. Open in Google Colab
+
+Open a new notebook in Google Colab.
+
+### 2. Install Required Packages
+
+In a code cell, run the following command to install the required packages:
+
+```python
+!pip install pandas textblob nltk scikit-learn poe-api
+
+## 3. Mount Google Drive
+Mount your Google Drive by running the following code in a code cell:
+
+from google.colab import drive
+drive.mount('/content/drive')
+This step enables access to the dataset file stored in Google Drive.
+
+## 4. Clone the Repository
+Clone the repository into your Google Colab notebook by running the following code in a code cell:
+!git clone <repository_url>
+Replace <repository_url> with the URL of your GitHub repository.
+
+## 5. Change to the Project Directory
+Navigate to the cloned repository folder by running the following code in a code cell:
+%cd <repository_name>
+Replace <repository_name> with the name of the cloned repository.
+
 ## Project Structure
 
 The project repository consists of the following files:
