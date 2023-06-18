@@ -1,17 +1,49 @@
-# test
+# CyberHealthy
 
-A new Flutter project.
+CyberHealthy is a project aimed at sentiment analysis and personalized support for harmful comments. It utilizes machine learning techniques to classify comments as positive or negative and provides appropriate responses, based on a diverse dataset of positive and negative comments in various different languages.
 
-## Getting Started
+## Project Structure
 
-This project is a starting point for a Flutter application.
+The project repository consists of the following files:
 
-A few resources to get you started if this is your first Flutter project:
+- `Model.ipynb`: Jupyter Notebook containing the code for training the sentiment analysis model.
+- `README.md`: This file, providing an overview and instructions for the project.
+- `advice-in-ig-stories.dart`: Flutter component for displaying advice in Instagram Stories format.
+- `advice-in-post.dart`: Flutter component for displaying advice in a post format.
+- `comment.dart`: Flutter component for handling comments and sentiment analysis.
+- `datasethackathon.xlsx`: Excel file containing the dataset for training the sentiment analysis model.
+- `ig-main.dart`: Flutter component for the main Instagram interface.
+- `ig-stories.dart`: Flutter component for handling Instagram Stories.
+- `main.dart`: Flutter component for the main application.
+- `postpage.dart`: Flutter component for displaying posts and comments.
+- `respond-in-ig-stories.dart`: Flutter component for responding to comments in Instagram Stories.
+- `utils.dart`: Utility functions used in the Flutter components.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Usage
+Open the Jupyter Notebook file named "CyberHealthy.ipynb" using Google Colab.
+The notebook consists of several sections:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# Cyberhealthy_UI
+- Data Collection: Reads the dataset file from Google Drive and prepares the data for analysis.
+- Preprocessing: Applies text preprocessing techniques such as removing special characters, converting to lowercase, removing stopwords, and lemmatizing the text.
+- Emotion Recognition: Trains a Support Vector Machine (SVM) classifier on the preprocessed data and predicts sentiments for test data.
+- User Input: Allows you to input your own text and receive a sentiment prediction.
+- Run each cell in the notebook to execute the code step by step. Make sure to modify any file paths or settings if necessary.
+
+After running the notebook, the model will be trained and evaluated using the dataset. You can modify the code to suit your specific requirements or use it as a starting point for your own project.
+
+## Instructions
+
+1. Make sure you have the necessary dependencies installed (see the "Dependencies" section below).
+2. Clone this repository to your local machine.
+3. Open the Flutter project in your preferred IDE or editor.
+4. Build and run the project on an emulator or physical device.
+
+## Dependencies
+
+The project requires the following dependencies:
+
+- Flutter: [Installation Guide](https://flutter.dev/docs/get-started/install)
+- Dart: [Installation Guide](https://dart.dev/get-dart)
+
+Make sure to follow the installation guides to set up Flutter and Dart on your machine.
+
