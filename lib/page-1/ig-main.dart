@@ -903,74 +903,77 @@ class Igmain extends StatelessWidget {
               child: Container(
                 width: 328.5*fem,
                 height: 19*fem,
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Container(
-                      // timeRNE (I55:2947;1:187)
-                      margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 234.83*fem, 0*fem),
-                      child: Text(
-                        '9:27',
-                        textAlign: TextAlign.center,
-                        style: SafeGoogleFont (
-                          'jsMath-cmbx10',
-                          fontSize: 15*ffem,
-                          fontWeight: FontWeight.w700,
-                          height: 1.2575*ffem/fem,
-                          letterSpacing: -0.3333333433*fem,
-                          color: Color(0xff000000),
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        // timeRNE (I55:2947;1:187)
+                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 234.83*fem, 0*fem),
+                        child: Text(
+                          '9:27',
+                          textAlign: TextAlign.center,
+                          style: SafeGoogleFont (
+                            'jsMath-cmbx10',
+                            fontSize: 15*ffem,
+                            fontWeight: FontWeight.w700,
+                            height: 1.2575*ffem/fem,
+                            letterSpacing: -0.3333333433*fem,
+                            color: Color(0xff000000),
+                          ),
                         ),
                       ),
-                    ),
-                    Container(
-                      // connectionsKiW (I55:2947;1:170)
-                      margin: EdgeInsets.fromLTRB(0*fem, 3.33*fem, 0*fem, 4.33*fem),
-                      height: double.infinity,
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Container(
-                            // cellularconnectionqwk (I55:2947;1:180)
-                            margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 0*fem),
-                            width: 17*fem,
-                            height: 10.67*fem,
-                            child: Image.asset(
-                              'assets/page-1/images/cellular-connection.png',
+                      Container(
+                        // connectionsKiW (I55:2947;1:170)
+                        margin: EdgeInsets.fromLTRB(0*fem, 3.33*fem, 0*fem, 4.33*fem),
+                        height: double.infinity,
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              // cellularconnectionqwk (I55:2947;1:180)
+                              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 0*fem),
                               width: 17*fem,
                               height: 10.67*fem,
+                              child: Image.asset(
+                                'assets/page-1/images/cellular-connection.png',
+                                width: 17*fem,
+                                height: 10.67*fem,
+                              ),
                             ),
-                          ),
-                          SizedBox(
-                            width: 5*fem,
-                          ),
-                          Container(
-                            // wifiwUz (I55:2947;1:175)
-                            margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 0.33*fem),
-                            width: 15.33*fem,
-                            height: 11*fem,
-                            child: Image.asset(
-                              'assets/page-1/images/wifi.png',
+                            SizedBox(
+                              width: 5*fem,
+                            ),
+                            Container(
+                              // wifiwUz (I55:2947;1:175)
+                              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 0.33*fem),
                               width: 15.33*fem,
                               height: 11*fem,
+                              child: Image.asset(
+                                'assets/page-1/images/wifi.png',
+                                width: 15.33*fem,
+                                height: 11*fem,
+                              ),
                             ),
-                          ),
-                          SizedBox(
-                            width: 5*fem,
-                          ),
-                          Container(
-                            // batterySAr (I55:2947;1:171)
-                            width: 24.33*fem,
-                            height: 11.33*fem,
-                            child: Image.asset(
-                              'assets/page-1/images/battery-izS.png',
+                            SizedBox(
+                              width: 5*fem,
+                            ),
+                            Container(
+                              // batterySAr (I55:2947;1:171)
                               width: 24.33*fem,
                               height: 11.33*fem,
+                              child: Image.asset(
+                                'assets/page-1/images/battery-izS.png',
+                                width: 24.33*fem,
+                                height: 11.33*fem,
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ),
