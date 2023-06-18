@@ -6,15 +6,13 @@ CyberHealthy is a project aimed at sentiment analysis and personalized support f
 
 To run the project, follow the steps below:
 
-### 1. Open in Google Colab
+## 1. Open in Google Colab
 
 Open a new notebook in Google Colab.
 
-### 2. Install Required Packages
+## 2. Install Required Packages
 
 In a code cell, run the following command to install the required packages:
-
-```python
 !pip install pandas textblob nltk scikit-learn poe-api
 
 ## 3. Mount Google Drive
