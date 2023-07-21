@@ -1,4 +1,5 @@
 # CyberHealthy
+# Top 20 project worldwide at the PolyHack 2023
 
 CyberHealthy is a project aimed at sentiment analysis and personalized support for harmful comments. It utilizes machine learning techniques to classify comments as positive or negative and provides appropriate responses, based on a diverse dataset of positive and negative comments in various different languages.
 
